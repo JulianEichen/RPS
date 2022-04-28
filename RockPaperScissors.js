@@ -8,8 +8,7 @@ function computerPlay() {
     return roboDraw;
 }
 
-console.log("Can you beat the RPSminator2000?!");
-
+/*
 while (play) {
     let roboHand = ['R', 'P', 'S'];
     let roboDraw = roboHand[Math.floor(Math.random() * roboHand.length)];
@@ -39,7 +38,12 @@ while (play) {
         play = false;
     }
 }
+*/
+// console.log("Thanks for palying.");
 
-console.log("Thanks for palying.");
+const container = document.querySelector('#container');
+
+
+
 
 
