@@ -41,7 +41,19 @@ while (play) {
 */
 // console.log("Thanks for palying.");
 
+function playRound(playerChoice){
+    const status = document.querySelector('.screen-status')
+}
+
 const container = document.querySelector('#container');
+
+// Eventlisteners
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) =>{
+    button.addEventListener('click', () => {
+        playRound(button.id);
+    })
+})
 
 
 
