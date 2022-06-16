@@ -42,7 +42,8 @@ while (play) {
 // console.log("Thanks for palying.");
 
 function playRound(playerChoice){
-    const status = document.querySelector('.screen-status')
+    const status = document.querySelector('.screen-status');
+    console.log(playerChoice);
 }
 
 const container = document.querySelector('#container');
