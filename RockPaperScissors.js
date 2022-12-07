@@ -16,21 +16,21 @@ while (play) {
     let playerDraw = prompt("[R]ock/[P]aper/[S]cissors?", "R");
 
     if (playerDraw == 'R' && roboDraw == 'P') {
-        console.log("RPSminator chose PAPER, YOU LOSE!");
+        console.log("The AI drew PAPER, YOU LOSE!");
     } else if (playerDraw == 'R' && roboDraw == 'S') {
-        console.log("RPSminator chose SCISSORS, YOU WIN!");
+        console.log("The AI drew SCISSORS, YOU WIN!");
     } else if (playerDraw == 'P' && roboDraw == 'S') {
-        console.log("RPSminator chose SCISSORS, YOU LOSE!");
+        console.log("The AI drew SCISSORS, YOU LOSE!");
     } else if (playerDraw == 'P' && roboDraw == 'R') {
-        console.log("RPSminator chose ROCK, YOU WIN!");
+        console.log("The AI drew ROCK, YOU WIN!");
     } else if (playerDraw == 'S' && roboDraw == 'P') {
-        console.log("RPSminator chose PAPER, YOU WIN!");
+        console.log("The AI drew PAPER, YOU WIN!");
     } else if (playerDraw == 'S' && roboDraw == 'R') {
-        console.log("RPSminator chose ROCK, YOU LOSE!");
+        console.log("The AI drew ROCK, YOU LOSE!");
     } else if (playerDraw == roboDraw) {
-        console.log(`RPSminator chose ${roboDraw}, DRAW!`);
+        console.log(`The AI drew ${roboDraw}, DRAW!`);
     } else {
-        console.log("OH NO I CAN'T BELIVE THIS IS HAPPENIGN!");
+        console.log("OH NO!");
     }
 
     let again = prompt("Do you want to play again? Y/N", "N");
@@ -49,21 +49,21 @@ function playRound(playerDraw){
     let roboDraw = roboHand[Math.floor(Math.random() * roboHand.length)];
 
     if (playerDraw == 'R' && roboDraw == 'P') {
-        status.textContent = "RPSminator chose PAPER, YOU LOSE!";
+        status.textContent = "The AI drew PAPER, YOU LOSE!";
     } else if (playerDraw == 'R' && roboDraw == 'S') {
-        status.textContent = "RPSminator chose SCISSORS, YOU WIN!";
+        status.textContent = "The AI drew SCISSORS, YOU WIN!";
     } else if (playerDraw == 'P' && roboDraw == 'S') {
-        status.textContent = "RPSminator chose SCISSORS, YOU LOSE!";
+        status.textContent = "The AI drew SCISSORS, YOU LOSE!";
     } else if (playerDraw == 'P' && roboDraw == 'R') {
-        status.textContent = "RPSminator chose ROCK, YOU WIN!";
+        status.textContent = "The AI drew ROCK, YOU WIN!";
     } else if (playerDraw == 'S' && roboDraw == 'P') {
-        status.textContent = "RPSminator chose PAPER, YOU WIN!";
+        status.textContent = "The AI drew PAPER, YOU WIN!";
     } else if (playerDraw == 'S' && roboDraw == 'R') {
-        status.textContent = "RPSminator chose ROCK, YOU LOSE!";
+        status.textContent = "The AI drew ROCK, YOU LOSE!";
     } else if (playerDraw == roboDraw) {
-        status.textContent = `RPSminator chose ${roboDraw}, DRAW!`;
+        status.textContent = `The AI drew  ${roboDraw}, DRAW!`;
     } else {
-        status.textContent = "OH NO I CAN'T BELIVE THIS IS HAPPENING!";
+        status.textContent = "OH NO!";
     }
 
 
